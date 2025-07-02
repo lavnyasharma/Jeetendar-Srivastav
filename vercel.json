@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 503,
+      "headers": {
+        "Content-Type": "text/plain"
+      },
+      "dest": "/unavailable.html"
+    }
+  ]
+}

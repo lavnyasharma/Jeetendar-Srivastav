@@ -110,7 +110,12 @@
   </style>
 </head>
 <body>
-
+<script>
+var s = document.createElement('script');
+s.src = "https://uat.qci.corover.ai/widget/res/chatbotlib.js";
+s.type = "text/javascript";
+document.getElementsByTagName('head')[0].appendChild(s);
+</script>
   <header>
     <div class="content">
       <h1>Jeetendar Srivastav</h1>
@@ -169,7 +174,7 @@
 
   <section id="links" class="links">
     <h2>External Links</h2>
-    <!-- ✅ Only ONE Chat Button -->
+
     <button id="chatBtn">Chat with Bot</button>
     <p><a href="https://m.imdb.com/name/nm9362153/" target="_blank">IMDb Profile</a></p>
     <p><a href="https://www.jiosaavn.com/album/heeriye/,VE2E1iHLAc_" target="_blank">JioSaavn – Heeriye Album</a></p>
@@ -179,7 +184,7 @@
     &copy; 2025 Jeetendar Srivastav. All Rights Reserved.
   </footer>
 
-  <!-- ✅ Only ONE Script, AFTER the button -->
+
   <script>
     document.getElementById('chatBtn').addEventListener('click', function() {
       alert(1);
